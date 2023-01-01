@@ -38,4 +38,3 @@ while (loop) {
 }
 
 alert('Thanks');
-    
