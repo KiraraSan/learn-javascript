@@ -1,6 +1,7 @@
-var value = 1;
+var angkot_value = 10;
+var angkot_num = 1;
 
-while (value <= 10) {
-    console.log('Angkot No. ' + value + ' beroperasi dengan baik.');
-    value++;
+while (angkot_num <= angkot_value) {
+    console.log('Angkot No. ' + angkot_num + ' beroperasi dengan baik.');
+    angkot_num++;
 }
