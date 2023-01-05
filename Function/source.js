@@ -68,14 +68,37 @@
 
 // retw(5, 10, 15, 'Hello', false); 
 
-function add() {
-    var total = 0;
+// function add() {
+//     var total = 0;
     
-    for (var i = 0; i < arguments.length; i++) {
-        total += arguments[i];
-    }
+//     for (var i = 0; i < arguments.length; i++) {
+//         total += arguments[i];
+//     }
+//     return total;
+// }
+
+// var plus = add(1, 2, 3, 4);
+// console.log(plus);
+
+/* Refactoring */
+// Before
+function findCubeArea(a, b) {
+    var volumeA;
+    var volumeB;
+    var total;
+
+    volumeA = a * a * a;
+    volumeB = b * b * b;
+
+    total = volumeA + volumeB;
+    
     return total;
 }
 
-var plus = add(1, 2, 3, 4);
-console.log(plus);
+// After
+function findCubeArea(a, b) {
+    return a * a * a +  b * b * b;
+}
+
+alert(findCubeArea(5, 10));
+/* ================================== */
