@@ -102,3 +102,17 @@ function findCubeArea(a, b) {
 
 alert(findCubeArea(5, 10));
 /* ================================== */
+
+// Scope 
+
+// "use strict"; // for local variable
+var a = 1; // global variable
+
+function test(a) { // local variable
+    console.log(a); // local variable
+    // a = 2;
+}
+
+test(a); // global variable
+console.log(a); // Result == 2 // global variable
+
