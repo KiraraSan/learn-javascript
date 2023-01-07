@@ -67,20 +67,37 @@
 // console.log(array2.join(' - '));
 
 // 6. foreach
-var num = [1, 2, 3, 4, 5];
-var nama = ['Name1', 'Name2', 'Name3'];
+// var num = [1, 2, 3, 4, 5];
+// var nama = ['Name1', 'Name2', 'Name3'];
 
-num.forEach(function(n) {
-    console.log(n)
-})
+// num.forEach(function(n) {
+//     console.log(n)
+// })
 
 // alternative (function expression)
-var print = function(n) {
-    console.log(n);
-}
+// var print = function(n) {
+//     console.log(n);
+// }
 
-num.forEach(print);
+// num.forEach(print);
 
-nama.forEach(function(i, j) {
-    console.log('Name : ' + i + '')
+// nama.forEach(function(i, j) {
+//     console.log('No ' + j + '. Name : ' + i);
+// })
+
+// 7. Map // return value
+// var num = [1, 2, 3, 4, 5];
+// var num2 = num.map(function(e) {
+//     return e * 2;
+// })
+
+// console.log(num2.join(' - '));
+
+// 8. Sort
+var num = [4, 3, 20, 5, 7, 2, 9, 10, 1, 8, 6];
+console.log(num.join(' - ')); 
+// num.sort();
+num.sort(function(a, b) {
+    return a - b;
 })
+console.log(num.join(' - ')); 
