@@ -40,16 +40,47 @@
 // Method
 // lenght, join, push, pop, shitf, unshift, slice, splice
 
-// Join
-var array = ['Name1', 'Name2', 'Name3'];
+// 1. Join
+// var array = ['Name1', 'Name2', 'Name3', 'Name4', 'Name5'];
 // console.log(array.join(' - '));n
 
-// Push & Pop // Input and delete from tail
+// 2. Push & Pop // Input and delete from tail
 // array.push('Name4', 'Name 5');
 // array.pop();
 // console.log(array.join(' - '));
 
-// Unshift & Shift // Input and delete from head
+// 3. Unshift & Shift // Input and delete from head
 // array.unshift('Name6');
 // array.shift();
-console.log(array.join(' - '));
+// console.log(array.join(' - '));
+
+// 4. Splice
+// spile(indexHead, howManyDeleted, newElement1, newElement2, ....);
+// array.splice(2, 0, 'Name4');
+// array.splice(1, 2, 'Name4', 'Name5');
+// console.log(array.join(' - '));
+
+// 5. Slice
+// slice(indexHead, IndexTail);
+// var array2 = array.slice(1, 3);
+// console.log(array.join(' - '));
+// console.log(array2.join(' - '));
+
+// 6. foreach
+var num = [1, 2, 3, 4, 5];
+var nama = ['Name1', 'Name2', 'Name3'];
+
+num.forEach(function(n) {
+    console.log(n)
+})
+
+// alternative (function expression)
+var print = function(n) {
+    console.log(n);
+}
+
+num.forEach(print);
+
+nama.forEach(function(i, j) {
+    console.log('Name : ' + i + '')
+})
