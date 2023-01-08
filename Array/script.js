@@ -38,7 +38,7 @@
 
 // =============================================================
 // Method
-// lenght, join, push, pop, shitf, unshift, slice, splice
+// lenght, join, push, pop, shitf, unshift, slice, splice, forEach, map, sort, filter, find
 
 // 1. Join
 // var array = ['Name1', 'Name2', 'Name3', 'Name4', 'Name5'];
@@ -94,10 +94,23 @@
 // console.log(num2.join(' - '));
 
 // 8. Sort
+// var num = [4, 3, 20, 5, 7, 2, 9, 10, 1, 8, 6];
+// console.log(num.join(' - ')); 
+// // num.sort();
+// num.sort(function(a, b) {
+//     return a - b;
+// })
+// console.log(num.join(' - ')); 
+
+// 9. Filter & Find
 var num = [4, 3, 20, 5, 7, 2, 9, 10, 1, 8, 6];
-console.log(num.join(' - ')); 
-// num.sort();
-num.sort(function(a, b) {
-    return a - b;
+// var num2 = num.filter(function(e) {
+//     // return e == 5;
+//     return e > 5;
+// })
+
+var num2 = num.find(function(e) {
+    // return e == 5;
+    return e > 5;
 })
-console.log(num.join(' - ')); 
+console.log(num2);
